@@ -1,0 +1,84 @@
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+    margin: auto;
+    padding: auto;
+    
+}
+
+.video-container img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+body {
+    display: block;
+    text-align: center; /* Centraliza todo o texto da página */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; /* Ocupa a altura total da tela */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+/* Contêiner pai */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Garante que o contêiner ocupe toda a altura da tela */
+    transform: translateY(-5%);
+    
+}
+
+/* Estilos do botão */
+.botao-voltar {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para garantir que o conteúdo não ultrapasse o botão */
+    position: relative;
+    transition: transform 0.3s;
+    background-color: #0000ff; /* Altera a cor de fundo para azul */
+    
+}
+
+.botao-voltar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    color: blue;
+}
+
+/* Efeitos de hover e active */
+.botao-voltar:hover {
+    transform: scale(1.1);
+}
+
+.botao-voltar:active {
+    transform: scale(0.9);
+}
+/* Estilo para o link */
+.link {
+    position: relative;
+    z-index: 2;  /* Coloca o link acima de outros elementos */
+    color: white; /* Definindo a cor do texto como branca */
+    font-size: 18px; /* Ajustando o tamanho da fonte, se necessário */
+    margin-top: 30px; /* Espaçamento entre o vídeo e o link */
+    display: inline-block; /* Para evitar que o link ocupe a largura inteira */
+}
